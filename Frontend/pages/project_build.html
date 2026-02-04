@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Build Activity</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/project_build.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Project Build</h1>
+                <div class="meta">
+                    <span class="badge">high</span>
+                    <span class="duration">⏱ 45 min</span>
+                </div>
+            </div>
+            <a href="./medium.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/project build.png" alt="Reading session" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>This activity focuses on building a project from scratch. Plan, design, and implement your ideas
+                        while improving problem-solving and technical skills.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Develops problem-solving skills</li>
+                        <li>Improves planning and organization</li>
+                        <li>Boosts technical and creative thinking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Define project goals and requirements</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Sketch or plan the design/flow</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Start building your project (coding, creating, or assembling)</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Test and refine your project for improvements</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Keep your phone away while writing. Focus completely on your thoughts and ideas without digital
+                        distractions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('project_build');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Activity</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="#" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Cooking</h1>
+                <div class="meta">
+                    <span class="badge">medium</span>
+                    <span class="duration">⏱ 30 min</span>
+                </div>
+            </div>
+            <a href="./medium.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/cooking.jpg" alt="Cooking Activity" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Prepare a healthy meal while focusing on the process of cooking mindfully without distractions.
+                    </p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Improves Lif skills</li>
+                        <li>Encourages healthy eating</li>
+                        <li>Boosts focus and patience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Gather all ingredients and utensils</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Wash and prepare vegetables or ingredients</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Cook slowly while focusing on each step</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Serve and enjoy the meal mindfully</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Keep your phone away while cooking. Focus on flavors, smells, and movements to fully enjoy a
+                        screen-free experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('cooking');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

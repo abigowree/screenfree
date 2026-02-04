@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogging</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/jogging.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Evening Jogging</h1>
+                <div class="meta">
+                    <span class="badge">medium</span>
+                    <span class="duration">⏱ 45 min</span>
+                </div>
+            </div>
+            <a href="../pages/medium.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/workout.webp" alt="Reading session" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Jogging helps improve physical fitness, boost stamina, and refresh your mind through steady
+                        movement.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Improves cardiovascular health</li>
+                        <li>Boosts energy levels</li>
+                        <li>Reduces stress and anxiety</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Wear comfortable shoes and stretch lightly</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Start jogging at a comfortable pace</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Maintain steady breathing and posture</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Cool down and stretch after finishing</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Avoid using your phone while jogging. Focus on your breathing, surroundings, and movement to
+                        enjoy a fully screen-free experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        document.querySelector('.complete-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            ActivityTracker.markComplete('jogging');
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>

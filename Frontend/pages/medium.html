@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen-Free Activities</title>
+    <link rel="stylesheet" href="../assets/css/activities.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+
+            <h1>Screen-Free Activities</h1>
+        </div>
+        <span class="count">1 activities completed</span>
+    </div>
+
+    <input type="text" class="search" placeholder=" Search activities...">
+
+    <!-- <div class="tabs">
+        <button class="tab active"> All Activities</button>
+        <button class="tab"> Jogging</button>
+        <button class="tab"> Journaling</button>
+        <button class="tab"> Cooking Practice</button>
+        <button class="tab"> Project Build</button>
+        <button class="tab"> Gardening</button>
+        <button class="tab"> New_skill</button>
+    </div> -->
+
+    <div class="activities">
+        <div class="card" data-activity-id="jogging">
+            <div>
+                <img src="../assets/images/workout.webp" alt="jogging">
+                <span class="badge">easy</span>
+                <span class="check">✓</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Evening Jogging</h3>
+                <p class="card-desc">Improve stamina and refresh your mind with a steady jogging session.</p>
+                <div class="card-footer">
+                    <span class="time">02/01/2026</span>
+                    <a href="../pages/jogging.html"><button class="btn btn-done">✓ Done</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-activity-id="journaling">
+            <div style="position: relative;">
+                <img src="../assets/images/journal.png" alt="journal">
+                <span class="badge">high</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Journaling</h3>
+                <p class="card-desc">Write your thoughts, goals, and reflections to gain clarity.</p>
+                <div class="card-footer">
+                    <span class="time">30/01/2026</span>
+                    <a href="../pages/journaling.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-activity-id="cooking">
+            <div style="position: relative;">
+                <img src="../assets/images/cooking.jpg" alt="cooking">
+                <span class="badge">easy</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Cooking Practice</h3>
+                <p class="card-desc">Cook a healthy meal and improve your eulinary skills.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/cooking.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="project_build">
+            <div style="position: relative;">
+                <img src="../assets/images/project build.png" alt="project_build">
+                <span class="badge">medium</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Project_build</h3>
+                <p class="card-desc">Start building your project (coding, creating or assembling).</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/project_build.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="gardening">
+            <div style="position: relative;">
+                <img src="../assets/images/gardening.webp" alt="gardening">
+                <span class="badge">medium</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Gardening</h3>
+                <p class="card-desc">Maintain plants regularly and observe their growth.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/gardening.html"> <button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="new_skill">
+            <div style="position: relative;">
+                <img src="../assets/images/new skill.webp" alt="Family">
+                <span class="badge">medium</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">New_Skill</h3>
+                <p class="card-desc">Practice the skill step by step.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/new_skill.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script src="../assets/js/activity_search.js"></script>
+</body>
+
+</html>

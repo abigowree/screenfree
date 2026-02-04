@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteering</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/high.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1> Volunteering</h1>
+                <div class="meta">
+                    <span class="badge">high</span>
+                    <span class="duration">⏱ 90 min</span>
+                </div>
+            </div>
+            <a href="./high.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/volunteering.jpg" alt="Reading session" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Volunteering allows you to contribute to society, help others, and develop a sense of
+                        responsibility and empathy.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Builds social responsibility</li>
+                        <li>Improves empathy and compassion</li>
+                        <li>Strengthens community connection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Choose a volunteering activity or cause</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Prepare necessary materials or permissions</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Actively participate and help others</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Reflect on the impact of your contribution</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Keep your phone away while volunteering. Be fully present and engage meaningfully with the people
+                        around you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('volunteering');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

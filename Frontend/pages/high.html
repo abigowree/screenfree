@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen-Free Activities</title>
+    <link rel="stylesheet" href="../assets/css/activities.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+
+            <h1>Screen-Free Activities</h1>
+        </div>
+        <span class="count">1 activities completed</span>
+    </div>
+
+    <input type="text" class="search" placeholder=" Search activities...">
+
+    <!-- <div class="tabs">
+        <button class="tab active"> All Activities</button>
+        <button class="tab">Intense Workout</button>
+        <button class="tab"> Creative Writing</button>
+        <button class="tab"> Community Volunteering</button>
+        <button class="tab"> Detox</button>
+        <button class="tab"> Deep Work</button>
+        <button class="tab">Brain Exercise</button>
+    </div> -->
+
+    <div class="activities">
+        <div class="card" data-activity-id="workout">
+            <div style="position: relative;">
+                <img src="../assets/images/workout 2.jpg" alt="workout">
+                <span class="badge">high</span>
+                <span class="check">✓</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Workout</h3>
+                <p class="card-desc">Boost strength and endurance with a high intensity workout.</p>
+                <div class="card-footer">
+                    <span class="time">20/01/2026</span>
+                    <a href="../pages/workout.html"><button class="btn btn-done">✓ Done</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-activity-id="writing">
+            <div style="position: relative;">
+                <img src="../assets/images/writing.avif" alt="writing">
+                <span class="badge">high</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Creative Writing</h3>
+                <p class="card-desc">Write essays stories or poems to sharpen creativity.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/writing.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-activity-id="volunteering">
+            <div style="position: relative;">
+                <img src="../assets/images/volunteering.jpg" alt="volunteering">
+                <span class="badge">high</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Volunteering</h3>
+                <p class="card-desc">Help others and build strong social responsibility.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/volunteering.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="detox">
+            <div style="position: relative;">
+                <img src="../assets/images/detox.jpg" alt="detox">
+                <span class="badge">high</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Detox</h3>
+                <p class="card-desc">This activity improves focus, mental, peace,and real-world awareness.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/detox.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="deep_work">
+            <div style="position: relative;">
+                <img src="../assets/images/deep work.jpg" alt="deep_work">
+                <span class="badge">high</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Deep Work</h3>
+                <p class="card-desc">Work continuously with full focus.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/deep_work.html"> <button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="brain_exercise">
+            <div style="position: relative;">
+                <img src="../assets/images/brain exercise.jpg" alt="brain_exercise">
+                <span class="badge">high</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Brain Exercise</h3>
+                <p class="card-desc">Challenge yourself with increasing difficulty.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/brain_exercise.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script src="../assets/js/activity_search.js"></script>
+</body>
+
+</html>

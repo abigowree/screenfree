@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Exercise</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/high.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Brain Exercise</h1>
+                <div class="meta">
+                    <span class="badge">high</span>
+                    <span class="duration">⏱ 50 min</span>
+                </div>
+            </div>
+            <a href="../pages/high.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/brain exercise.jpg" alt="Cooking Activity" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Brain exercises strengthen cognitive abilities such as memory, logic, and problem-solving.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Improves memory and recall</li>
+                        <li>Enhances logical thinking</li>
+                        <li>Boosts concentration and mental agility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Choose a brain activity (puzzle, sudoku, chess, riddles)</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Set a time limit and focus completely</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Challenge yourself with increasing difficulty</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Review mistakes and learn new strategies</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Keep your phone away and engage fully with the activity. Focus on problem-solving without
+                        interruptions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('brain_exercise');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

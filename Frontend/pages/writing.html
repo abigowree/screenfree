@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/medium.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Writing</h1>
+                <div class="meta">
+                    <span class="badge">medium</span>
+                    <span class="duration">⏱ 60 min</span>
+                </div>
+            </div>
+            <a href="./high.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/writing.avif" alt="Reading session" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Writing allows you to express ideas, thoughts, and stories while improving creativity and
+                        communication skills.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Enhances creativity and imagination</li>
+                        <li>Improves writing skills</li>
+                        <li>Boosts mental clarity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Choose a topic or writing prompt</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Write freely without worrying about mistakes</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Organize your thoughts clearly</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Review and refine your writing</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Keep your phone away while writing. Focus completely on your thoughts and ideas without digital
+                        distractions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('writing');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

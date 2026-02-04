@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen-Free Activities</title>
+    <link rel="stylesheet" href="../assets/css/activities.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="#" class="back">← Dashboard</a>
+            <h1>Screen-Free Activities</h1>
+        </div>
+        <span class="count">1 activities completed</span>
+    </div>
+
+    <input type="text" class="search" placeholder=" Search activities...">
+
+    <!-- <div class="tabs">
+        <button class="tab active"> All Activities</button>
+        <button class="tab"> Reading</button>
+        <button class="tab"> Exercise</button>
+        <button class="tab"> Creative</button>
+        <button class="tab"> Social</button>
+        <button class="tab"> Mindfulness</button>
+        <button class="tab"> Music</button>
+    </div> -->
+
+    <div class="activities">
+        <div class="card" data-activity-id="reading">
+            <div style="position: relative;">
+                <img src="../assets/images/people-library-reading-books.jpg" alt="Reading">
+                <span class="badge">easy</span>
+                <span class="check">✓</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Morning Reading Session</h3>
+                <p class="card-desc">Start your day with an inspiring book or article to stimulate your mind.</p>
+                <div class="card-footer">
+                    <span class="time">01/02/2026</span>
+                    <a href="../pages/reading.html"><button class="btn btn-done">✓ Done</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-activity-id="nature_walk">
+            <div style="position: relative;">
+                <img src="../assets/images/vertical-shot-male-with-backpack-walking-narrow-pathway-middle-trees-plants.jpg"
+                    alt="Nature">
+                <span class="badge">easy</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Nature Walk</h3>
+                <p class="card-desc">Take a refreshing walk outdoors to connect with nature and clear your mind.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/nature_walk.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-activity-id="family_game_night">
+            <div style="position: relative;">
+                <img src="../assets/images/six-joyful-friends-playing-tabletop-game.jpg" alt="Family">
+                <span class="badge">easy</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Family Game Night</h3>
+                <p class="card-desc">Engage in fun board games or card games with family members.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/FamilyGameNight.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="creative_drawing">
+            <div style="position: relative;">
+                <img src="../assets/images/still-life-graphic-design-studio.jpg" alt="Family">
+                <span class="badge">easy</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Creative Drawing</h3>
+                <p class="card-desc">Express yourself through art and unleash your creativity.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/creativeDrawing.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="mindfulness">
+            <div style="position: relative;">
+                <img src="../assets/images/woman-practicing-yoga-by-lake.jpg" alt="Family">
+                <span class="badge">easy</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Mindfulness Meditation</h3>
+                <p class="card-desc">Practice mindfulness to reduce stress and improve mental clarity.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/mindfulness.html"> <button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-activity-id="musical">
+            <div style="position: relative;">
+                <img src="../assets/images/close-up-hand-writing-song (1).jpg" alt="Family">
+                <span class="badge">easy</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Musical Practice</h3>
+                <p class="card-desc">Practice playing an instrument or singing to enhance your musical skills.</p>
+                <div class="card-footer">
+                    <span class="time"></span>
+                    <a href="../pages/musical.html"><button class="btn btn-start">▶ Start</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script src="../assets/js/activity_search.js"></script>
+</body>
+
+</html>

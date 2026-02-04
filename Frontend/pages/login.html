@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenFree - Sign Up</title>
+    <!-- <link rel="stylesheet" href="../assets/css/login.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #5e5ef9, #3fc783);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+            animation: popup 0.8s ease-out forwards;
+        }
+
+        @keyframes popup {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form {
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            font-size: 14px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #d2d4d8;
+            outline: none;
+            font-size: 14px;
+            background: #f5f7fb;
+            transition: all 0.3s ease;
+        }
+
+        .form input:focus {
+            border-color: #2c7cfb;
+            background: white;
+        }
+
+        #submit-btn {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #0079ff, #00c569);
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s ease;
+        }
+
+        #submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 121, 255, 0.3);
+        }
+
+        #submit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            body {
+                gap: 20px;
+                padding: 15px;
+            }
+
+            .content h2 {
+                font-size: 22px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 25px 20px;
+            }
+
+            .form {
+                margin-bottom: 16px;
+            }
+
+            .form input {
+                padding: 10px;
+            }
+
+            #submit-btn {
+                padding: 13px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .content h2 {
+                font-size: 20px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>ScreenFree</h2>
+        <h2>Welcome to Your Journey</h2>
+        <p>Create your account to start building healthier digital habits</p>
+    </div>
+
+    <div class="container">
+        <form>
+
+
+            <div class="form">
+                <label for="email">Email-id</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a Password" required>
+            </div>
+
+
+
+            <div class="form">
+                <button type="submit" id="submit-btn">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../assets/js/auth.js"></script>
+</body>
+
+</html>

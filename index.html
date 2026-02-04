@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Frontend/assets/css/style.css">
+</head>
+
+<body>
+  <header class="head">
+    <div>
+      <h1>Screen Free</h1>
+    </div>
+    <a href="./Frontend/pages/register.html"><button class="button">Login</button></a>
+  </header>
+  <div class="banner">
+    <div class="quote"> Break Free from Mobile Addiction</div>
+    <div class="ban-title">
+      Create Screen-Free Time, <br>
+      <span>Enjoy Life Beyond Mobiles</span>
+    </div>
+    <div class="sub-title">
+      ScreenFree helps you, your children, and your family develop healthier <br>digital habits through personalized
+      schedules, engaging activities, and <br> motivational tracking.
+    </div>
+    <div class="btn-group">
+      <button id="start-journey-btn">Start Your Journey</button>
+
+      <button>Learn More</button>
+    </div>
+    <script>
+      document.getElementById('start-journey-btn').addEventListener('click', function () {
+        const token = localStorage.getItem('access_token');
+        if (!token) {
+          alert('Please login to start your assessment journey.');
+          window.location.href = './Frontend/pages/login.html';
+        } else {
+          window.location.href = './Frontend/pages/assesment.html';
+        }
+      });
+    </script>
+    <div class="img-div">
+    </div>
+
+  </div>
+  <div class="bar">
+    <div>
+      <p class="time">85%</p>
+      <p class="words">Users report reduced screen time</p>
+    </div>
+    <div>
+      <p class="time">2.5hr</p>
+      <p class="words">Average daily reduction</p>
+    </div>
+    <div>
+      <p class="time">10k+</p>
+      <p class="words">Activities completed</p>
+    </div>
+    <div>
+      <p class="time">95%</p>
+      <p class="words">User satisfaction rate</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="break-free">
+      <h2>Everything You Need to Break Free</h2>
+      <p>Our comprehensive platform provides tools, activities, and support to help you build healthier digital habits.
+      </p>
+    </div>
+    <div class="boxes">
+      <div class="box1">
+        <h2>Self-Assessment Test</h2>
+        <p>Identify your mobile addiction level and get personalized recommendations</p>
+      </div>
+      <div class="box1">
+        <h2>Smart Schedule Planner</h2>
+        <p>Create phone-free hours with engaging alternative activities</p>
+      </div>
+      <div class="box1">
+        <h2>Rewards & Badges</h2>
+        <p>Earn achievements and maintain streaks for consistent progress</p>
+      </div>
+      <div class="box1">
+        <h2>Family Support</h2>
+        <p>Tools for parents and teachers to guide children's digital habits</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container2">
+    <div class="container-head sec">
+      <h3>How ScreenFree Works</h3>
+      <p>Simple steps to transform your digital habits</p>
+    </div>
+    <div class="container-content sec">
+      <div class="content">
+        <p class="number">1</p>
+        <p>Take Assessment</p>
+        <p>Complete our quick self-assessment to identify your mobile addiction level and get personalized
+          recommendations.</p>
+      </div>
+      <div class="content">
+        <p class="number">2</p>
+        <p>Plan Your Schedule</p>
+        <p>Create daily schedules with phone-free hours and choose from hundreds of engaging offline activities.</p>
+      </div>
+      <div class="content">
+        <p class="number">3</p>
+        <p>Track Progress</p>
+        <p>Monitor your improvement, earn badges, maintain streaks, and celebrate your journey to digital wellness.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<footer class="footer">
+  <div class="footer-top">
+    <h2>Ready to Start Your Screen-Free Journey?</h2>
+    <p>Join thousands of users who have successfully reduced their screen time and improved their quality of life.</p>
+    <button class="footer-btn">Get Started Free</button>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <span class="logo-icon">🛡️</span> ScreenFree
+    </div>
+    <p>Helping families create healthier relationships with technology</p>
+    <small>© 2024 ScreenFree. Designed for digital wellness.</small>
+  </div>
+</footer>

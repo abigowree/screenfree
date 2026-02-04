@@ -1,0 +1,403 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+   font-family: arial;
+ }
+
+ .head {
+   background: linear-gradient(rgb(65, 65, 224), rgb(80, 218, 106));
+   padding: 20px;
+   justify-content: space-between;
+   display: flex;
+ }
+
+ .button {
+   border-radius: 10px;
+   padding: 10px;
+   color: rgb(12, 12, 12);
+   background: linear-gradient(rgb(51, 59, 223), rgb(20, 166, 74));
+ }
+
+ .button:hover {
+   padding: 20px;
+ }
+
+ .banner {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   text-align: center;
+   padding: 80px 50px;
+   background-color: #e7f2f8;
+ }
+
+ .quote {
+   background-color: rgba(0, 174, 0, 0.135);
+   padding: 5px 10px;
+   border-radius: 10px;
+   color: rgb(0, 108, 0);
+   font-size: small;
+   border: 1px solid rgba(0, 111, 0, 0.301);
+ }
+
+ .ban-title {
+   font-size: 50px;
+   color: rgba(0, 0, 104, 0.76);
+ }
+
+ .sub-title {
+   font-size: larger;
+   letter-spacing: .5px;
+   color: rgb(112, 112, 112);
+ }
+
+ .ban-title>span {
+   background: linear-gradient(to right, green, orange);
+   background-clip: text;
+   color: transparent;
+ }
+
+ .btn-group {
+   display: flex;
+   gap: 20px;
+   padding: 10px;
+ }
+
+ .btn-group button:hover {
+   transform: scale(1.05);
+ }
+
+ .btn-group button {
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: none;
+   font-weight: bold;
+ }
+
+ .btn-group button:nth-child(1) {
+   color: white;
+   background: linear-gradient(to right, rgb(0, 98, 255), rgb(0, 163, 81));
+ }
+
+ .btn-group button:nth-child(2) {
+   border: 1px solid rgb(140, 203, 255);
+   background-color: #fff;
+   color: blue;
+ }
+
+ .img-div {
+   height: 300px;
+   width: 600px;
+   flex-shrink: 1;
+   background: grey;
+   border-radius: 20px;
+   background-image: url('../images/Photo_mobile.png');
+   background-repeat: no-repeat;
+   background-position: 0 -70px;
+   background-size: cover;
+ }
+
+ .bar {
+   margin-top: 40px;
+   display: flex;
+   width: 93%;
+   justify-content: space-between;
+   padding: 60px;
+   background-color: rgb(255, 255, 255);
+ }
+
+ .time {
+   color: #1947df;
+   font-size: xx-large;
+ }
+
+ .words {
+   font-size: x-large;
+ }
+
+ .container {
+   padding: 100px 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+
+ }
+
+ .break-free {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+ }
+
+ .box1 {
+   height: 300px;
+   width: 300px;
+   background: linear-gradient(rgb(85, 53, 241), rgb(51, 164, 107));
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+ }
+
+ .boxes {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+
+ }
+
+ .container2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px;
+ }
+
+ .container-head {
+   text-align: center;
+ }
+
+ .container-head h3 {
+   font-size: xx-large;
+   color: #0a2991;
+   font-weight: lighter;
+ }
+
+ .container-head p {
+   font-size: larger;
+ }
+
+ .container-content {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .container-content p:nth-child(1) {
+   background-color: blue;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   line-height: 100px;
+   color: white;
+ }
+
+ .sec {
+   padding: 40px;
+ }
+
+ .content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   text-align: center;
+   line-height: 30px;
+   font-weight: bold;
+ }
+
+ /* Fade-in for banner text */
+ body {
+   animation: fadeIn 1.2s ease-in forwards;
+   opacity: 0;
+ }
+
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: translateY(20px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ /* Button smooth hover animation */
+ button {
+   transition: all 0.3s ease;
+ }
+
+ /* Box hover scale effect */
+ .box1 {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .box1:hover {
+   transform: translateY(-10px) scale(1.03);
+   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+ }
+
+ /* Banner image slight zoom effect */
+ .img-div {
+   transition: transform 0.6s ease;
+ }
+
+ .img-div:hover {
+   transform: scale(1.05);
+ }
+
+ /* ===== Footer Section ===== */
+ .footer {
+   margin-top: 80px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ /* Upper Gradient Section */
+ .footer-top {
+   text-align: center;
+   padding: 80px 20px;
+   background: linear-gradient(90deg, #1e5ef5, #01a978);
+   color: white;
+ }
+
+ .footer-top h2 {
+   font-size: 32px;
+   font-weight: bold;
+   margin-bottom: 15px;
+ }
+
+ .footer-top p {
+   font-size: 18px;
+   margin-bottom: 30px;
+ }
+
+ .footer-btn {
+   background: white;
+   padding: 12px 30px;
+   border-radius: 10px;
+   color: #0058ff;
+   border: none;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+
+ .footer-btn:hover {
+   transform: scale(1.05);
+ }
+
+ /* Bottom Blue Section */
+ .footer-bottom {
+   text-align: center;
+   padding: 50px 20px;
+   background-color: #1d3f9e;
+   color: white;
+ }
+
+ .footer-logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+
+ .logo-icon {
+   font-size: 28px;
+ }
+
+ /* ========== Responsive Styles ========== */
+
+ /* Tablets */
+ @media (max-width: 1024px) {
+   .banner {
+     padding: 60px 30px;
+   }
+
+   .ban-title {
+     font-size: 40px;
+   }
+
+   .bar {
+     flex-wrap: wrap;
+     gap: 30px;
+     justify-content: center;
+   }
+
+   .box1 {
+     width: 45%;
+   }
+
+   .container-content {
+     flex-direction: column;
+     gap: 20px;
+   }
+ }
+
+ /* Mobile devices */
+ @media (max-width: 768px) {
+   .head {
+     flex-direction: column;
+     gap: 15px;
+     text-align: center;
+   }
+
+   .ban-title {
+     font-size: 32px;
+   }
+
+   .sub-title {
+     font-size: 16px;
+   }
+
+   .btn-group {
+     flex-direction: column;
+     width: 100%;
+   }
+
+   .btn-group button {
+     width: 100%;
+   }
+
+   .img-div {
+     width: 100%;
+     height: 250px;
+     background-position: center;
+     background-size: cover;
+   }
+
+   .bar {
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+   }
+
+   .boxes {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .box1 {
+     width: 100%;
+     height: auto;
+     padding: 20px;
+   }
+ }
+
+ /* Small phones */
+ @media (max-width: 480px) {
+   .ban-title {
+     font-size: 28px;
+   }
+
+   .quote {
+     font-size: 12px;
+   }
+
+   .btn-group button {
+     padding: 12px;
+   }
+ }
+
+ .number {
+   height: 100px;
+   border-radius: 10px;
+ }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assessment Complete</title>
+    <style>
+        body {
+            background-color: #d4e8e0;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .box {
+            background-color: #fff9f0;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+
+
+        .circle-animation {
+            width: 120px;
+            height: 120px;
+            border: 8px solid #1e4d8b;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: none;
+        }
+
+        .warning {
+            color: #ff8c00;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            color: #c45500;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        h1 {
+            color: #1e4d8b;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        p {
+            color: #1b0606;
+            text-align: center;
+            font-size: 18px;
+            margin: 30px 0;
+        }
+
+        h2 {
+            color: #1e4d8b;
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+
+        .step {
+            color: #5a5a5a;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .check {
+            color: #4caf50;
+            margin-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            margin-top: 50px;
+        }
+
+        .two-btn {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(195, 119, 71);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1e4d8b;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .box {
+                padding: 30px;
+            }
+
+            .circle-animation {
+                width: 80px;
+                height: 80px;
+                border-width: 6px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p .step {
+                font-size: 16px;
+            }
+
+            .two-btn {
+                gap: 20px;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            button {
+                width: auto;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p,
+            .step {
+                font-size: 14px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+
+            .two-btn {
+                gap: 15px;
+            }
+
+            button {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="circle-animation"></div>
+
+        <div class="warning">⚠</div>
+        <div class="status">Assessment Complete</div>
+        <h1 id="risk-level">Your Addiction Level: Calculating...</h1>
+
+        <p>Your results indicate a personalized path forward. ScreenFree will help you build better digital habits.</p>
+
+        <h2>Recommended Next Steps:</h2>
+
+        <div class="step"><span class="check">✓</span> Set specific phone-free hours daily</div>
+        <div class="step"><span class="check">✓</span> Replace phone activities with engaging alternatives</div>
+        <div class="step"><span class="check">✓</span> Use our schedule planner to structure your day</div>
+
+        <div class="two-btn">
+            <a href="./assesment6.html"><button>Back</button></a>
+            <button id="view-activities">View Activities</button>
+        </div>
+
+        <div class="footer">Thank you for completing the assessment.</div>
+    </div>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/assessment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+/* Professional Color Palette & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0f172a;
+    /* Deep Slate Blue */
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    color: #f8fafc;
+    font-family: 'Inter', -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    /* Bright Sky Blue */
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* The Main Card */
+.question-card {
+    background-color: #1e293b;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Option Buttons */
+.option {
+    background-color: #334155;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.option:hover {
+    border-color: #38bdf8;
+    background-color: #1e293b;
+    transform: translateX(5px);
+}
+
+.option p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-prev {
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1px solid #475569;
+}
+
+.btn-prev:hover {
+    color: white;
+    background-color: #475569;
+}
+
+.btn-next {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.btn-next:hover {
+    background-color: #7dd3fc;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .question-card {
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .option {
+        padding: 12px 15px;
+    }
+
+    .nav-buttons {
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .question-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .option {
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .btn-prev {
+        order: 2;
+    }
+
+    .btn-next {
+        order: 1;
+    }
+}

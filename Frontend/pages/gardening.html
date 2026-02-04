@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/gardening.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Gardening</h1>
+                <div class="meta">
+                    <span class="badge">medium</span>
+                    <span class="duration">⏱ 30 min</span>
+                </div>
+            </div>
+            <a href="../pages/medium.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/gardening.webp" alt="Cooking Activity" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Gardening helps you connect with nature while improving patience, focus, and mental well-being.
+                    </p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Reduces stress and promotes relaxation</li>
+                        <li>Boosts patience and mindfulness</li>
+                        <li>Enhances connection with nature</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Choose plants you want to grow (flowers, vegetables, or herbs)</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Prepare soil, pots, or garden beds</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Plant seeds or seedlings and water them carefully</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Maintain plants regularly and observe their growth</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Keep your phone away while gardening. Focus on your plants, enjoy the process, and immerse
+                        yourself in nature.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('gardening');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

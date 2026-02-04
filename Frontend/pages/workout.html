@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="../pages/high.html" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Intense Workout</h1>
+                <div class="meta">
+                    <span class="badge">high</span>
+                    <span class="duration">⏱ 75 min</span>
+                </div>
+            </div>
+            <a href="./high.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/workout 2.jpg" alt="Reading session" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>This high-intensity workout helps build strength, endurance, and overall physical fitness.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Builds muscle strength</li>
+                        <li>Improves endurance</li>
+                        <li>Boosts overall fitness</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Warm up your body with light stretching</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Perform strength and cardio exercises</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Maintain proper posture and breathing</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Cool down and stretch after finishing</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Focus fully on your workout without using your phone. Listen to your body and stay hydrated.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        document.querySelector('.complete-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            ActivityTracker.markComplete('workout');
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Reading Session</title>
+    <link rel="stylesheet" href="../assets/css/jogging.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="#" class="back-link">← Back to Activities</a>
+
+        <div class="header">
+            <div class="title-section">
+                <h1>Nature Walk</h1>
+                <div class="meta">
+                    <span class="badge">easy</span>
+                    <span class="duration">⏱ 30 min</span>
+                </div>
+            </div>
+            <a href="./activities.html"><button class="complete-btn">Mark Complete</button></a>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="../assets/images/vertical-shot-male-with-backpack-walking-narrow-pathway-middle-trees-plants.jpg"
+                    alt="Reading session" width="80px" height="500px">
+
+                <div class="about-box">
+                    <h2>About This Activity</h2>
+                    <p>Start your day with an inspiring book or article to stimulate your mind.</p>
+
+                    <h3>Benefits:</h3>
+                    <ul class="benefits">
+                        <li>Boosts mood </li>
+                        <li>Improves cardiovascular health</li>
+                        <li>Vitamin D exposure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="instructions-box">
+                    <h2>Step-by-Step Instructions</h2>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Choose a safe walking route</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Walk at a comfortable pace</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Observe your surroundings mindfully</div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Take deep breaths of fresh air</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <h3>Tips for Success:</h3>
+                    <p>Remember to keep your phone away during this activity. Focus entirely on the present moment and
+                        enjoy the experience of being screen-free!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/activity_tracker.js"></script>
+    <script>
+        const btn = document.querySelector('.complete-btn') || document.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ActivityTracker.markComplete('nature_walk');
+                window.history.back();
+            });
+        }
+    </script>
+</body>
+
+</html>

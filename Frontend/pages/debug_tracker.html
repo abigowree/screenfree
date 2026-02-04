@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Debug Activity Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .debug-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button.danger {
+            background: #f44336;
+        }
+
+        pre {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="debug-box">
+        <h1>Activity Tracker Debug Tool</h1>
+
+        <h2>Current Completed Activities:</h2>
+        <pre id="output">Loading...</pre>
+
+        <h2>Actions:</h2>
+        <button onclick="showData()">Refresh Data</button>
+        <button class="danger" onclick="clearData()">Clear All Completed Activities</button>
+
+        <h2>Activity Counts:</h2>
+        <div id="counts"></div>
+    </div>
+
+    <script>
+        function showData() {
+            const data = localStorage.getItem('completed_activities');
+            const output = document.getElementById('output');
+            const countsDiv = document.getElementById('counts');
+
+            if (data) {
+                const parsed = JSON.parse(data);
+                output.textContent = JSON.stringify(parsed, null, 2);
+
+                // Count activities
+                const total = Object.keys(parsed).length;
+                countsDiv.innerHTML = `<p><strong>Total Completed:</strong> ${total}</p>`;
+
+                // List each activity
+                let list = '<ul>';
+                for (let key in parsed) {
+                    list += `<li><strong>${key}</strong>: ${parsed[key].date}</li>`;
+                }
+                list += '</ul>';
+                countsDiv.innerHTML += list;
+            } else {
+                output.textContent = 'No completed activities found.';
+                countsDiv.innerHTML = '<p>No data</p>';
+            }
+        }
+
+        function clearData() {
+            if (confirm('Are you sure you want to clear all completed activities?')) {
+                localStorage.removeItem('completed_activities');
+                showData();
+                alert('Cleared! Refresh your activity pages to see the changes.');
+            }
+        }
+
+        // Auto-load on page load
+        showData();
+    </script>
+</body>
+
+</html>
