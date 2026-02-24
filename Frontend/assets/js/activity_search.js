@@ -32,24 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Tab click handlers
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs
-            tabs.forEach(t => t.classList.remove('active'));
-            // Add active class to clicked tab
-            tab.classList.add('active');
+    // tabs.forEach(tab => {
+    //     tab.addEventListener('click', () => {
+    //         // Remove active class from all tabs
+    //         tabs.forEach(t => t.classList.remove('active'));
+    //         // Add active class to clicked tab
+    //         tab.classList.add('active');
 
-            const tabText = tab.textContent.trim().toLowerCase();
+    //         const tabText = tab.textContent.trim().toLowerCase();
 
-            if (tabText === 'all activities') {
-                currentCategory = 'all';
-            } else {
-                currentCategory = tabText;
-            }
+    //         if (tabText === 'all activities') {
+    //             currentCategory = 'all';
+    //         } else {
+    //             currentCategory = tabText;
+    //         }
 
-            filterActivities();
-        });
-    });
+    //         filterActivities();
+    //     });
+    // });
 
     // Search input handler
     if (searchInput) {
